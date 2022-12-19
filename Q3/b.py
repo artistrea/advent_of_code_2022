@@ -9,7 +9,6 @@ total = 0
 with open('Q3/input.txt', 'r') as file:
     current_group_size = 0
     current_group_letter_count = {}
-    print("total", total)
     for line in file:
         for letter in set(line):
             current_group_letter_count[letter] = current_group_letter_count.setdefault(letter, 0) + 1
